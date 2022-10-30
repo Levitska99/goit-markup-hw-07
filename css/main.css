@@ -465,17 +465,17 @@ body {
   min-width: 216px;
 }
 
-.heading {
+.section-advantages {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
-.heading-item {
+.advantages__list {
   display: flex;
   gap: 30px;
 }
 
-.header-back {
+.advantages__icon {
   width: 270px;
   height: 120px;
   background: #F5F4FA;
@@ -485,7 +485,7 @@ body {
   justify-content: center;
 }
 
-.heading-subtitle {
+.advantages__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -495,7 +495,7 @@ body {
   margin-bottom: 10px;
 }
 
-.heading-text {
+.advantages__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -805,6 +805,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hero-title);
+}
+
+.logo_text--blue {
+  color: var(--accent-color);
 }
 
 .footer-nav {

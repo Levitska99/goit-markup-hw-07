@@ -1,13 +1,13 @@
-.heading {
+.section-advantages {
     padding-top: 94px;
     padding-bottom: 47px;
 }
 
-.heading-item{
+.advantages__list{
     display: flex;
     gap: 30px;
 }
-.header-back{
+.advantages__icon{
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -17,15 +17,15 @@
     justify-content: center;
 }
 
-.heading-subtitle {
+.advantages__subtitle {
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 10px;
 }
 
-.heading-text {
+.advantages__text {
     @include font(null, 14px, 1.71, 0.03em);
     color: var(--subtitle-colour);
-    
+
 }

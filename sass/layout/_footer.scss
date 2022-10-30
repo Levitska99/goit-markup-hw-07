@@ -17,6 +17,9 @@
     @include font(700, 26px, 1.19, 0.03em);
     color: var(--hero-title);
 }
+.logo_text--blue{
+    color: var(--accent-color);
+}
 .footer-nav{
     display: block;
    
