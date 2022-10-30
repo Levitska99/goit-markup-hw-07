@@ -1,0 +1,30 @@
+.heading {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.heading-item{
+    display: flex;
+    gap: 30px;
+}
+.header-back{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-subtitle {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.heading-text {
+    @include font(null, 14px, 1.71, 0.03em);
+    color: var(--subtitle-colour);
+}

@@ -1,0 +1,114 @@
+.header {
+    border-bottom: 1px solid var(--border-cont);
+
+}
+.header-logo{
+    font-family: 'Raleway', suns-serif;
+    @include font(700, 26px, 1.19, 0.03em);
+    color: var(--main-color);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+   
+
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.header-list{
+    display: flex;
+    gap: 50px;
+}
+.nav-header{
+   display: flex; 
+   align-items: center;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.header-conect{
+   display: flex;
+   margin-left: auto;
+   gap: 30px;
+}
+
+.header-link{
+    position: relative;
+    @include font(500, 14px, 1.14, 0.02em);
+    color: var(--main-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+    color: var(--accent-color)
+}
+}
+    .header-link.current {
+    color: var(--accent-color);
+    }
+    
+    .current::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    bottom: -1px;
+    border-radius: 2px; 
+}
+    .header-mail{
+    @include font(500, 14px, 1.14, 0.02em);
+    color: var(--subtitle-colour);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+    .header-tel{
+    @include font(500, 14px, 1.14, 0.02em);
+    color: var(--subtitle-colour);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.conect-icon{
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+
+
+
+
+
