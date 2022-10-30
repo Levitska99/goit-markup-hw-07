@@ -1,8 +1,8 @@
-.hero {
+.hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
    }
-   .hero{
+   .hero-section{
        margin: 0 auto;
        text-align: center;
        align-items: center;
@@ -17,7 +17,7 @@
    
    }
    
-   .hero-title{
+   .hero__title{
        @include font(900, 44px, 1.36, 0.06em);
        color: var(--hero-title);
        text-transform: uppercase;
@@ -45,5 +45,6 @@
         background-color: var(--btn-focus);
     }
    }
-   
-    
+   .btn--large{
+    min-width: 216px
+   }

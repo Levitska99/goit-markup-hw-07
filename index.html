@@ -12,47 +12,48 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <nav class="nav-header"> 
-                <a class="header-logo link" href="#"> <span class="logo">Web</span>Studio</a>
-                    <ul class="header-list list">
-                        <li class="header-item">
-                            <a class="header-link link current" href="./index.html">Студія</a>
+    <header class="page-header">
+        <div class="container page-header__container">
+            <nav class="page-header__navigation"> 
+                <a class="logo page-header__logo link" href="#"><span class="logo__text--black">Web</span>Studio</a>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link link" href="./portfolio.html">Портфоліо</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="header-item">
-                            <a class="header-link link" href="#">Контакти</a>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link link" href="#">Контакти</a>
                         </li>
                             
                     </ul>
                
              </nav>
-             <div class="header-conect">
-                <ul class="header-list  list">
-                    <li class="header-item"><a class="header-mail link" href="mailto:info@devstudio.com">
-                     <svg class="conect-icon" width="16" height="12">
+             <ul class="site-contacts page-header__site-contacts list">
+                    <li class="header-item">
+                        <a class="site-contacts__link link" href="mailto:info@devstudio.com">
+                     <svg class="site-contacts__icon" width="16" height="12">
                         <use href="./image/symbol-defs.svg#icon-envelope-hover"></use>
                      </svg>info@devstudio.com</a></li>
-                    <li class="header-item"><a class="header-tel link" href="tel:+380961111111">
-                        <svg class="conect-icon" width="10" height="16" >
+                    <li class="header-item">
+                        <a class="site-contacts__link link" href="tel:+380961111111">
+                        <svg class="site-contacts__icon" width="10" height="16" >
                             <use href="./image/symbol-defs.svg#icon-smartphone01"></use>
                         </svg>
                         +38 096 111 11 11</a></li>
                  </ul>
-             </div>
+             
              
         </div>
    
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero-section">
             <div class="container">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn-text" data-modal-open type="button">Замовити послугу</button>
+                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                <button class="hero-btn-text btn--large" data-modal-open type="button">Замовити послугу</button>
             </div>
             
         </section>

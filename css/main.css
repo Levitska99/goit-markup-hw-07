@@ -286,11 +286,11 @@ body {
   text-decoration: none;
 }
 
-.header {
+.page-header {
   border-bottom: 1px solid var(--border-cont);
 }
 
-.header-logo {
+.page-header__logo {
   font-family: "Raleway", suns-serif;
   font-weight: 700;
   font-size: 26px;
@@ -302,34 +302,37 @@ body {
   padding-bottom: 25px;
 }
 
-.logo {
+.logo__text--black {
   color: var(--accent-color);
 }
 
-.header-list {
+.site-nav {
   display: flex;
   gap: 50px;
 }
 
-.nav-header {
+.page-header__navigation {
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
 }
 
-.header-conect {
+.site-contacts {
   display: flex;
-  margin-left: auto;
   gap: 30px;
 }
 
-.header-link {
+.page-header__site-contacts {
+  margin-left: auto;
+}
+
+.site-nav__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -345,15 +348,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover, .header-link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.header-link.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.site-nav__link--current::after {
   content: " ";
   position: absolute;
   left: 0;
@@ -366,7 +369,7 @@ body {
   border-radius: 2px;
 }
 
-.header-mail {
+.site-contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -380,11 +383,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-mail:hover, .header-mail:focus {
+.site-contacts__link:hover, .site-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.header-tel {
+.site-contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -398,22 +401,21 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-tel:hover, .header-tel:focus {
+.site-contacts__link:hover, .site-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.conect-icon {
-  width: 16px;
+.site-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.hero {
+.hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero {
+.hero-section {
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -426,7 +428,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -457,6 +459,10 @@ body {
 }
 .hero-btn-text:hover, .hero-btn-text:focus {
   background-color: var(--btn-focus);
+}
+
+.btn--large {
+  min-width: 216px;
 }
 
 .heading {

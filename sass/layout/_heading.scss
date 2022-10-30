@@ -15,7 +15,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .heading-subtitle {
@@ -28,4 +27,5 @@
 .heading-text {
     @include font(null, 14px, 1.71, 0.03em);
     color: var(--subtitle-colour);
+    
 }
